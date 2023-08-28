@@ -1,3 +1,4 @@
+import { AppState } from "../AppState.js"
 
 /** class creates a blueprint for a data object */
 export class Snack {
@@ -11,7 +12,12 @@ export class Snack {
             this.picture = picture
             this.money = money
         }
-     get cardTemplate() {
+
+        // Naming conventions are important 
+     get SnacksTemplate() {
         // TODO CREATE CARD TEMPLATE
+        return `
+        <div onclick="app.SnackController.buySnack()">${this.name}</div>
+        `
      }   
 }

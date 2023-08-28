@@ -8,10 +8,8 @@ import { AboutView } from "./views/AboutView.js";
 export const router = [
   {
     path: '',
-    controller: [HomeController, SnackController],
-    view: /*html*/`
-    <section class="row justify-content-center" id="snack-list"></section>
-    `
+    controller: SnackController,
+    view: /*html*/``
   },
   {
     path: '#/about',
